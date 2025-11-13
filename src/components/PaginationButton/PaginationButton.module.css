@@ -1,0 +1,56 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #cdcdcd;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+}
+
+.basic {
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #cdcdcd;
+  transition: all 0.2s ease-in-out;
+}
+
+.basic:hover {
+  color: #fb773f;
+}
+
+.active {
+  background-color: #716f6f;
+}
+
+.basic.active {
+  background-color: transparent;
+  color: #716f6f;
+  font-weight: 800;
+  color: #fb773f;
+  border: 1px solid #080423;
+  padding: 2px 5px;
+  border-radius: 50%
+}
+
+.button {
+  font-weight: 400;
+  font-size: 16px;
+  color: #080423;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  padding: 5px 10px;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  color: #FF3D81;
+  border: 1px solid #080423;
+}

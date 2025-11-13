@@ -1,0 +1,36 @@
+.footer {
+  background-color: #293241;
+}
+
+.wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 35px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fb773f;
+}
+
+.navList {
+  display: flex;
+  column-gap: 40px;
+}
+
+.listItem {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff9f9;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.listItem:hover {
+  color: #fb773f;
+}

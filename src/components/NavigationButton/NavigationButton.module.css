@@ -1,0 +1,63 @@
+.navigation {
+  display: flex;
+  column-gap: 25px;
+  padding: 12px;
+}
+
+.navigation.end .button::after {
+  transform: none;
+}
+
+.navigation.end .button::after {
+  left: 102%;
+}
+
+.navigation.end .button:hover::after {
+  left: 112%;
+}
+
+.start {
+  justify-content: flex-start;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #293241;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  padding: 10px 20px;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  color: #ff6933;
+  border: 1px solid #293241;
+}
+
+.button:hover::after {
+  left: -25px;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 16px;
+  top: 30%;
+  left: -10px;
+  transform: translateY(-50%);
+  background-image: url(../../assets/images/arrow-next.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease;
+  transform: rotate(180deg);
+}

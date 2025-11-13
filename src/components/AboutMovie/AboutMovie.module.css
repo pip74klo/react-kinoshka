@@ -1,0 +1,28 @@
+.about {
+  padding-top: 40px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #0f0a33;
+}
+
+.table {
+  display: flex;
+  column-gap: 160px;
+}
+
+.table ul {
+  display: flex;
+  gap: 100px;
+  padding-top: 20px;
+}
+
+
+.table ul li {
+  font-weight: 400;
+  font-size: 18px;
+  color: #7a7a7a;
+  min-width: 150px;
+}

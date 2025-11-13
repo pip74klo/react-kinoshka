@@ -1,0 +1,14 @@
+.search {
+  width: 1340px;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.list {
+  padding-bottom: 40px;
+}

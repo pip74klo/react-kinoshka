@@ -1,0 +1,12 @@
+.moviesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 17px;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}

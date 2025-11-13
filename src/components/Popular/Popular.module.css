@@ -1,0 +1,39 @@
+.popularWrapper {
+  display: flex;
+  gap: 20px;
+  padding-top: 60px;
+}
+
+.button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 60px;
+  color: #222121;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  color: #fb773f;
+  border: 1px solid #080423;
+}
+
+.active {
+  background-color: #293241;
+  color: #fff;
+}
+
+.active.button:hover {
+  color: #fff;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 17px;
+}

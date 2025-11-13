@@ -1,0 +1,25 @@
+.error {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  padding: 90px 0px;
+}
+
+.similar {}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.list {
+  display: flex;
+  justify-content: start;
+  gap: 17px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}

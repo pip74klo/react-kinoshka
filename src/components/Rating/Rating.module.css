@@ -1,0 +1,23 @@
+.rating {
+  min-width: 190px;
+  font-size: 18px;
+  color: #fb773f;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.wrapper span {
+  color: #293241;
+  font-weight: 700;
+}
+
+.wrapper span b {
+  color: #fb773f;
+}

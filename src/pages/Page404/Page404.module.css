@@ -1,0 +1,12 @@
+.root {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.description {
+  font-size: 24px;
+}

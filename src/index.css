@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Nunito", Roboto, system-ui, Tahoma, sans-serif;
+  color: #293241;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ececec;
+}
+
+.container {
+  flex: 1;
+  max-width: 1340px;
+  padding: 60px 10px 80px;
+  margin: 0 auto;
+}
