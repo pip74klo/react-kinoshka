@@ -7,49 +7,27 @@ const AboutMovie = ({ movie, dataStaff }) => {
   return (
     <div className={styles.about}>
       <h3 className={styles.title}>О фильме</h3>
-
       <div className={styles.table}>
-        <div>
-          <ul>
-            <li>Жанр:</li>
-            <li>{formatInfo(movie?.genres, 'genre')}</li>
-          </ul>
-          <ul>
-            <li>Страна:</li>
-            <li>{formatInfo(movie?.countries, 'country')}</li>
-          </ul>
-          <ul>
-            <li>Год:</li>
-            <li>{movie?.year}</li>
-          </ul>
-          <ul>
-            <li>Режиcсер:</li>
-            <li>{formatStaff(dataStaff, 'DIRECTOR')}</li>
-          </ul>
-          <ul>
-            <li>В главных ролях:</li>
-            <li>{formatStaff(dataStaff, 'ACTOR')}</li>
-          </ul>
-        </div>
-
-
-
-
-
-        {/* <ul>
+        <ul>
           <li>Жанр:</li>
-          <li>Страна:</li>
-          <li>Год:</li>
-          <li>Режиcсер:</li>
-          <li>В главных ролях:</li>
+          <li>{formatInfo(movie?.genres, 'genre')}</li>
         </ul>
         <ul>
-          <li>{formatInfo(movie?.genres, 'genre')}</li>
+          <li>Страна:</li>
           <li>{formatInfo(movie?.countries, 'country')}</li>
+        </ul>
+        <ul>
+          <li>Год:</li>
           <li>{movie?.year}</li>
+        </ul>
+        <ul>
+          <li>Режиcсер:</li>
           <li>{formatStaff(dataStaff, 'DIRECTOR')}</li>
+        </ul>
+        <ul>
+          <li>В главных ролях:</li>
           <li>{formatStaff(dataStaff, 'ACTOR')}</li>
-        </ul> */}
+        </ul>
       </div>
     </div>
   )

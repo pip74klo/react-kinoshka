@@ -38,7 +38,7 @@ const Categories = () => {
     setQueryParams(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleClickSearch = async (queryParams) => {
+  const handleClickSearch = (queryParams) => {
     if (isEqual(queryParams, prevQueryParams)) return
 
     setLoading(true)

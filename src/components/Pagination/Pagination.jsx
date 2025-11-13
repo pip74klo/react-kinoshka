@@ -1,4 +1,5 @@
 import PaginationButton from '../PaginationButton'
+
 import styles from './Pagination.module.css'
 
 const Pagination = ({ currentPage, setCurrentPage, totalPage, variant }) => {

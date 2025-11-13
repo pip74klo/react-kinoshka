@@ -18,10 +18,10 @@ const Header = () => {
 
   const onClickSubmitSearch = (e) => {
     e.preventDefault()
-    const trimmedValue = inputValue.trim()
-    if (!trimmedValue) return
+    const trimValue = inputValue.trim()
+    if (!trimValue) return
 
-    dispatch(setKeywords(trimmedValue))
+    dispatch(setKeywords(trimValue))
     setInputValue('')
     navigate('movies/search-by-keyword')
   }

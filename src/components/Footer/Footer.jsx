@@ -1,7 +1,9 @@
-import { Link, useNavigate } from 'react-router-dom';
-import styles from './Footer.module.css'
 import { useDispatch } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
+
 import { setTypeMovies } from '../../redux/slice/moviesSlice';
+
+import styles from './Footer.module.css';
 
 const Footer = () => {
   const dispatch = useDispatch()

@@ -14,7 +14,7 @@ const Frames = ({ images }) => {
     setCurrentSlide(index)
   }
 
-  if (data?.length < 1) return <div className={styles.error}>Кадры не найдены.</div>
+  if (data?.length === 0) return <div className={styles.error}>Кадры не найдены.</div>
 
   return (
     <div className={styles.frames}>

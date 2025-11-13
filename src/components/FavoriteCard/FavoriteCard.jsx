@@ -1,8 +1,10 @@
 import { useDispatch } from 'react-redux';
-import { formatInfo } from '../../helpers/formatInfo';
-import styles from './FavoriteCard.module.css'
-import { removeFavorite } from '../../redux/slice/favoritesSlice';
 import { Link } from 'react-router-dom';
+
+import { formatInfo } from '../../helpers/formatInfo';
+import { removeFavorite } from '../../redux/slice/favoritesSlice';
+
+import styles from './FavoriteCard.module.css'
 
 const FavoriteCard = ({ movie }) => {
   const dispatch = useDispatch()
@@ -13,15 +15,12 @@ const FavoriteCard = ({ movie }) => {
 
   return (
     <div className={styles.card}>
-      <Link
-        to={`/movie/${movie.id}`}
-      // onClick={scrollToTop}
-      >
+      <Link to={`/movie/${movie.id}`}>
         <div className={styles.imgWrapper}>
           <img className={styles.img} src={movie.posterUrl} alt={`Постер фильма ${movie.nameRu}`} />
         </div>
-
       </Link>
+
       <div className={styles.info}>
         <div className={styles.list}>
           <h3 className={styles.title}>{movie.nameRu}</h3>
@@ -33,7 +32,8 @@ const FavoriteCard = ({ movie }) => {
         <button
           onClick={() => removeFromFavorites(movie.id)}
           className={styles.button}>
-          Удалить</button>
+          Удалить
+        </button>
       </div>
     </div>
   )

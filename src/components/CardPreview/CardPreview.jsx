@@ -14,15 +14,17 @@ const CardPreview = ({ movie, isShow }) => {
     })
   }
 
+  const shortName = movie?.nameRu?.length > 21 ? movie?.nameRu?.slice(0, 20) + ' ...' : movie?.nameRu
+
   return (
     <Link
       to={`/movie/${movie?.kinopoiskId || movie?.filmId}`}
       className={styles.card}
       onClick={scrollToTop}
     >
-      <img className={styles.img} src={movie?.posterUrl} alt="poster" />
+      <img className={styles.img} src={movie?.posterUrl} alt={`Постер фильма ${movie?.nameRu}`} />
       <div className={styles.info}>
-        <h5 className={styles.name}>{movie?.nameRu?.length > 21 ? movie?.nameRu?.slice(0, 20) + ' ...' : movie?.nameRu}</h5>
+        <h5 className={styles.name}>{shortName}</h5>
         <div className={styles.infoBox}>
           <span className={styles.year}>{isShow ? `${movie?.year}г.` : null}</span>
           <span className={styles?.rating}>
