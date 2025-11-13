@@ -8,26 +8,28 @@ const AboutMovie = ({ movie, dataStaff }) => {
     <div className={styles.about}>
       <h3 className={styles.title}>О фильме</h3>
       <div className={styles.table}>
-        <ul>
-          <li>Жанр:</li>
-          <li>{formatInfo(movie?.genres, 'genre')}</li>
-        </ul>
-        <ul>
-          <li>Страна:</li>
-          <li>{formatInfo(movie?.countries, 'country')}</li>
-        </ul>
-        <ul>
-          <li>Год:</li>
-          <li>{movie?.year}</li>
-        </ul>
-        <ul>
-          <li>Режиcсер:</li>
-          <li>{formatStaff(dataStaff, 'DIRECTOR')}</li>
-        </ul>
-        <ul>
-          <li>В главных ролях:</li>
-          <li>{formatStaff(dataStaff, 'ACTOR')}</li>
-        </ul>
+        <div>
+          <ul>
+            <li>Жанр:</li>
+            <li>{formatInfo(movie?.genres, 'genre')}</li>
+          </ul>
+          <ul>
+            <li>Страна:</li>
+            <li>{formatInfo(movie?.countries, 'country')}</li>
+          </ul>
+          <ul>
+            <li>Год:</li>
+            <li>{movie?.year}</li>
+          </ul>
+          <ul>
+            <li>Режиcсер:</li>
+            <li>{formatStaff(dataStaff, 'DIRECTOR')}</li>
+          </ul>
+          <ul>
+            <li>В главных ролях:</li>
+            <li>{formatStaff(dataStaff, 'ACTOR')}</li>
+          </ul>
+        </div>
       </div>
     </div>
   )
