@@ -37,3 +37,35 @@
   flex-wrap: wrap;
   gap: 30px 17px;
 }
+
+@media (max-width: 900px) {
+  .popularWrapper {
+    padding-top: 30px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button {
+    font-size: 15px;
+    padding: 8px 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .popularWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  .button {
+    width: 190px;
+    font-size: 14px;
+    padding: 8px 17px;
+  }
+}

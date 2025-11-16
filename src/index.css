@@ -21,11 +21,11 @@
   /* padding: 60px 15px 80px; */
   padding: 30px 15px 40px;
   margin: 0 auto;
-  outline: 0.5px solid red;
 }
 
 @media (max-width: 1300px) {
   .container {
+    max-width: calc(100vw - 40px);
     padding: 15px 15px 20px;
   }
 }

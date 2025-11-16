@@ -10,3 +10,13 @@
   text-align: center;
   font-weight: 600;
 }
+
+@media (max-width: 900px) {
+  .moviesList {
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+}
