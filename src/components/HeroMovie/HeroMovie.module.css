@@ -63,9 +63,125 @@
 }
 
 .img {
-  width: 100%;
   max-height: 600px;
   width: auto;
   height: auto;
   border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+  .img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 960px) {
+  .info h2 {
+    font-size: 25px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .img {
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .img {
+    max-height: 400px;
+  }
+
+  .button {
+    width: 120px;
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .info h2 {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .img {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  .info {
+    padding: 0 15px;
+    gap: 10px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    gap: 5px;
+  }
+
+  .info h2 {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .img {
+    max-height: 250px;
+  }
 }

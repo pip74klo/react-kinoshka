@@ -73,3 +73,63 @@
   border: 1px solid #293241;
   background-color: #fff;
 }
+
+@media (max-width: 1200px) {
+  .wrapper {
+    gap: 0px;
+  }
+
+  .input {
+    width: 250px;
+  }
+
+  .search::after {
+    right: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .wrapper {
+    padding: 20px 0px;
+  }
+
+  .input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .search::after {
+    right: 47%;
+  }
+
+  .input::placeholder {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .wrapper {
+    row-gap: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .logo {
+    order: 0;
+  }
+
+  .search {
+    order: 2;
+    gap: 15px;
+  }
+}

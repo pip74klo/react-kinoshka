@@ -1,5 +1,6 @@
 .footer {
   background-color: #293241;
+  padding: 0 10px;
 }
 
 .wrapper {
@@ -33,4 +34,43 @@
 
 .listItem:hover {
   color: #fb773f;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .navList {
+    column-gap: 30px;
+  }
+
+  .navList li,
+  .navList a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navList li,
+  .navList a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .wrapper {
+    flex-direction: column-reverse
+  }
 }
