@@ -54,3 +54,36 @@
   color: #FF3D81;
   border: 1px solid #080423;
 }
+
+@media (max-width: 900px) {
+  .basic {
+    font-size: 16px;
+  }
+
+  .circle {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .basic {
+    font-size: 15px;
+  }
+
+  .circle {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .basic {
+    font-size: 14px;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+  }
+}

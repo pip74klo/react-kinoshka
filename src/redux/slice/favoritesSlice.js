@@ -18,6 +18,7 @@ export const favoritesSlice = createSlice({
     },
     removeFavorite: (state, action) => {
       state.favoriteList = state.favoriteList.filter(item => item.id !== action.payload)
+      localStorage.setItem('movies', JSON.stringify(state.favoriteList))
     },
 
   },

@@ -18,7 +18,7 @@
 
 .button {
   display: inline-block;
-  padding: 9px 52px;
+  padding: 7px 28px;
   border-radius: 60px;
   cursor: pointer;
   font-weight: 500;
@@ -34,4 +34,57 @@
   color: #fb773f;
   border: 1px solid #293241;
   background-color: #fff;
+}
+
+@media (max-width: 900px) {
+
+
+
+  .select {
+    font-size: 15px;
+    width: 130px;
+    padding: 7px 12px;
+    background-size: 15px 7px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .list {
+    column-gap: 10px;
+  }
+
+  .select {
+    font-size: 14px;
+    width: 120px;
+    padding: 5px 12px;
+    background-size: 15px 7px;
+  }
+
+  .button {
+    font-size: 15px;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .list {
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .select {
+    font-size: 13px;
+    width: 120px;
+    padding: 5px 12px;
+    background-size: 12px 5px;
+  }
+
+  .button {
+    width: 120px;
+  }
 }

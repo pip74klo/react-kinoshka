@@ -9,6 +9,7 @@ import { useFetch } from '../../helpers/hooks/useFetch';
 import { getMoviesByKeyword } from '../../api/apiMovies';
 
 import styles from './KeywordSearchPage.module.css';
+import CardPreview from '../../components/CardPreview';
 
 const KeywordSearchPage = () => {
   const { keyword } = useSelector(state => state.movies)
@@ -20,12 +21,16 @@ const KeywordSearchPage = () => {
       <NavigationButton align={'start'} urlNavigate={-1} text={'Назад'} />
 
       <div className={styles.title}>Результат поиска по запросу "{keyword}" </div>
-      <div className={styles.list}>
-        <MovieList
+      {/* <div className={styles.list}> */}
+      <ul className={styles.list}>
+        {data?.films?.map(movie => <li key={movie.kinopoiskId}><CardPreview movie={movie} isShow /></li>)}
+      </ul>
+
+      {/* <MovieList
           data={data?.films}
           loading={loading}
-          error={error} />
-      </div>
+          error={error} /> */}
+      {/* </div> */}
       <Pagination
         currentPage={currentPage}
         setCurrentPage={setCurrPage}

@@ -16,7 +16,6 @@
     flex-wrap: nowrap;
     gap: 20px;
     overflow-x: auto;
-    overflow-y: hidden;
     scrollbar-width: none;
   }
 }

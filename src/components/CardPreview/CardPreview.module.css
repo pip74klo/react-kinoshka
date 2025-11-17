@@ -59,3 +59,73 @@
   width: 22px;
   height: 18px;
 }
+
+@media (max-width: 900px) {
+  .card {
+    width: 200px;
+    height: 350px;
+  }
+
+  .img {
+    width: 100%;
+    height: 270px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
+  .card {
+    width: 150px;
+    height: 250px;
+  }
+
+  .info {
+    padding: 0 8px;
+  }
+
+  .img {
+    width: 100%;
+    height: 180px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .year {
+    font-size: 12px;
+  }
+
+  .rating {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 130px;
+    height: 220px;
+    row-gap: 0;
+  }
+
+  .img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+}

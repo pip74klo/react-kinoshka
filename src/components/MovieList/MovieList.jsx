@@ -5,7 +5,7 @@ import styles from './MovieList.module.css'
 const MovieList = ({ data, count, loading, error }) => {
   if (loading) return <div>Загрузка...</div>
   if (error) return <div className={styles.title}>Не удалось загрузить информацию о фильмах или сериалах</div>
-  if (!data || data?.length === 0) return <div className={styles.title}>Фильмы не найдены</div>
+  if (!data || data?.length === 0) return <div className={styles.title}>Нет фильмов или сериалов в данной категории</div>
 
   const movies = count ? data.slice(0, count) : data
 

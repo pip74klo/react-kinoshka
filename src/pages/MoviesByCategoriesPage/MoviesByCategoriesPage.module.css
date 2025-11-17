@@ -20,6 +20,33 @@
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 30px 17px;
   padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .list {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .list {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 16px;
+  }
 }

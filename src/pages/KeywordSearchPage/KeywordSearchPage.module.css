@@ -1,14 +1,42 @@
-.search {
-  width: 1340px;
-}
+.search {}
 
 .title {
   font-size: 28px;
   text-align: center;
   font-weight: 600;
-  padding-bottom: 40px;
 }
 
 .list {
-  padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px 17px;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 22px;
+  }
+
+  .list {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .list {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 16px;
+  }
 }
