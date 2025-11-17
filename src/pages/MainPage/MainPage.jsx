@@ -6,7 +6,7 @@ const MainPage = () => {
 
   return (
     <>
-      {/* <HeroMovie /> */}
+      <HeroMovie />
       <Popular />
       <Categories />
     </>

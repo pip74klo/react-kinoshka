@@ -1,11 +1,12 @@
 .about {
   padding-top: 40px;
+  color: #293241;
 }
 
 .title {
   font-weight: 700;
   font-size: 40px;
-  color: #0f0a33;
+  color: #293241;
 }
 
 .table {
@@ -25,4 +26,63 @@
   font-size: 18px;
   color: #7a7a7a;
   min-width: 150px;
+}
+
+@media (max-width: 1150px) {
+  .table ul li {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 950px) {
+  .table ul li {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 850px) {
+  .title {
+    text-align: center;
+  }
+
+  .table ul {
+    gap: 70px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about {
+    padding-top: 20px;
+  }
+
+  .table ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .table ul {
+    gap: 45px;
+  }
+}
+
+@media (max-width: 550px) {
+  .table ul {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .table ul {
+    gap: 10px;
+  }
 }

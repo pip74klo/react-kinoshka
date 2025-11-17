@@ -9,7 +9,7 @@ const Similar = ({ similar }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const { data, loading, error } = similar;
 
-  const countPreview = 5
+  const countPreview = 4
   const startIndex = (currentPage - 1) * countPreview
   const endIndex = startIndex + countPreview
 

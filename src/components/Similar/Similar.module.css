@@ -18,8 +18,25 @@
 
 .list {
   display: flex;
-  justify-content: start;
+  justify-content: space-evenly;
   gap: 17px;
   flex-wrap: wrap;
   padding-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+
+  .title,
+  .error {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .title,
+  .error {
+    font-size: 18px;
+    padding: 20px 0px;
+  }
 }

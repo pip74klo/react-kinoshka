@@ -9,14 +9,13 @@
 
 .title {
   padding-top: 80px;
-  text-align: center;
   padding-bottom: 50px;
+  text-align: center;
 }
 
 .title span {
   border-radius: 60px;
-  padding: 10px 6px;
-  padding: 11px 29px;
+  padding: 10px 30px;
   background-color: #293241;
   color: #fff;
   text-align: center;
@@ -26,7 +25,7 @@
 .list {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 15px;
   padding-bottom: 40px;
@@ -51,4 +50,80 @@
 .imgWrapper:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 10px #c5bebe;
+}
+
+@media (max-width: 1370px) {
+  .imgWrapper {
+    width: 380px;
+    height: 370px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .imgWrapper {
+    width: 340px;
+    height: 330px;
+  }
+}
+
+@media (max-width: 900px) {
+  .imgWrapper {
+    width: 310px;
+    height: 300px;
+  }
+
+  .title {
+    padding-top: 60px;
+  }
+
+  .title span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .imgWrapper {
+    width: 240px;
+    height: 230px;
+  }
+
+  .title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .title span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .imgWrapper {
+    width: 160px;
+    height: 150px;
+  }
+
+  .title span {
+    font-size: 15px;
+  }
+
+
+  .list {
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .imgWrapper {
+    width: 140px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 350px) {
+  .imgWrapper {
+    width: 120px;
+    height: 110px;
+  }
 }
